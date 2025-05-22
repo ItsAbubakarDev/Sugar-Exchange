@@ -1,0 +1,143 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+body{
+    overflow-x: hidden;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-attachment: scroll;
+    background-image: url('background.png');
+    background-size: cover;
+    color: #fff;
+    background-position: center;
+    position: relative;
+}
+
+.content {
+    margin-top: 5%;
+    text-align: left;
+    padding-top: 80px;
+    padding-left: 90px;
+
+}
+
+.content h1 {
+    font-size: 72px;
+    margin-bottom: 15px;
+    line-height: 1.1;
+}
+
+.content h1 span {
+    color: #ff960b;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.content .btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 35px;
+    color: white;
+    text-decoration: none;
+    background-color: #ff960b;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.content .btn:hover {
+    background-color: #e8850a;
+    transform: translateY(-2px);
+}
+
+.coin-list {
+    position: absolute;
+    display: flex;
+    right: 10%;
+    bottom: 120px;
+    align-items: center;
+    gap: 15px;
+}
+
+.coin {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #ff960b;
+    border: 1px solid #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.coin:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.coin img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.coin h3 {
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.coin p {
+    margin: 0;
+    font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 48px;
+    }
+    
+    .coin-list {
+        position: static;
+        justify-content: center;
+        margin-top: 40px;
+        flex-wrap: wrap;
+    }
+    
+    .coin {
+        margin: 5px;
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 36px;
+    }
+    
+    .container {
+        padding: 80px 5% 0;
+    }
+    
+    .coin-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .coin {
+        width: 100%;
+        max-width: 250px;
+        justify-content: center;
+    }
+}
