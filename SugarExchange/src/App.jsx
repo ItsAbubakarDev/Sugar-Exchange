@@ -5,6 +5,8 @@ import FirstHomePart from './Components/FirstHomePart';
 import TradingViewWidget from './Components/TradingViewWidget';
 import FeaturedCoins from './Components/FeaturedCoins';
 import Trade from './Components/Trade';
+import SignIn from './Components/SignIn';
+import SignUp from './Components/SignUp';
 
 function App() {
   const [count, setCount] = useState(0)
