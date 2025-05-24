@@ -1,15 +1,13 @@
-import { useState } from 'react'
-import './App.css'
-import Header from './Components/Header';
-import FirstHomePart from './Components/FirstHomePart';
-import TradingViewWidget from './Components/TradingViewWidget';
+import './App.css';
 import FeaturedCoins from './Components/FeaturedCoins';
+import FilterCoinCategory from './Components/FilterCoinCategory';
+import FirstHomePart from './Components/FirstHomePart';
+import Header from './Components/Header';
 import Trade from './Components/Trade';
-import SignIn from './Components/SignIn';
-import SignUp from './Components/SignUp';
+import TradingViewWidget from './Components/TradingViewWidget';
+import Portfolio from './Components/Portfolio';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -17,7 +15,8 @@ function App() {
       <FirstHomePart></FirstHomePart>
       <TradingViewWidget></TradingViewWidget>
       <FeaturedCoins></FeaturedCoins>
-      <Trade></Trade>
+      <FilterCoinCategory></FilterCoinCategory>
+      <Portfolio></Portfolio>
     </>
   )
 }
